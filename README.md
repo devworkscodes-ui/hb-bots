@@ -11,16 +11,10 @@ Baixe a versão desejada na [página de Releases](https://github.com/devworkscod
 
 ## Executar no Linux
 
-1. Baixe o arquivo `HB-Bots` da Release e abra um terminal na pasta onde ele foi salvo.
-2. Torne o arquivo executável:
+Baixe o arquivo `HB-Bots` da Release e abra um terminal na pasta onde ele foi salvo. Execute estes comandos:
 
-   ```bash
-chmod +x HB-Bots
-```
-
-3. Inicie o hub:
-
-   ```bash
+```bash
+chmod +x ./HB-Bots
 ./HB-Bots
 ```
 
