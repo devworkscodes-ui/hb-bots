@@ -1,0 +1,4 @@
+ddgs>=9.16
+pynput>=1.7
+pyinstaller>=6.22
+wikipedia>=1.4
