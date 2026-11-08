@@ -4,11 +4,27 @@ Hub gráfico para abrir quatro versões de bots, pesquisar produtos em lojas e u
 
 ## Downloads
 
-As versões para Windows e Linux são publicadas na página **Releases** deste repositório. No Windows, baixe `HB-Bots.exe`. No Linux, baixe `HB-Bots`, torne o arquivo executável e abra-o a partir de uma sessão gráfica.
+Baixe a versão desejada na [página de Releases](https://github.com/devworkscodes-ui/hb-bots/releases/latest):
 
-## Linux e Auto Typer
+- **Windows:** `HB-Bots.exe`
+- **Linux:** `HB-Bots`
 
-A interface gráfica funciona em Linux com Tk/Tkinter. O Auto Typer usa `pynput` e foi preparado para sessões X11. Em Wayland, o sistema pode bloquear a simulação de teclas por segurança; nesse caso, use uma sessão X11.
+## Executar no Linux
+
+1. Baixe o arquivo `HB-Bots` da Release e abra um terminal na pasta onde ele foi salvo.
+2. Torne o arquivo executável:
+
+   ```bash
+chmod +x HB-Bots
+```
+
+3. Inicie o hub:
+
+   ```bash
+./HB-Bots
+```
+
+O aplicativo precisa de uma sessão gráfica Linux. O Auto Typer funciona melhor em **X11**. Em **Wayland**, o sistema pode bloquear a simulação de teclas; se isso ocorrer, entre numa sessão X11.
 
 ## Criar uma versão local
 
@@ -18,7 +34,7 @@ Instale Python 3.14 e os pacotes:
 python -m pip install -r requirements.txt
 ```
 
-Gere o executável com PyInstaller para o seu sistema. O workflow em `.github/workflows/build-release.yml` cria builds para Windows e Linux e publica uma Release ao enviar uma tag `v*`.
+O workflow em `.github/workflows/build-release.yml` cria versões para Windows e Linux e publica uma Release.
 
 ## Componentes
 
