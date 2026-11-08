@@ -1,0 +1,7 @@
+__pycache__/
+build/
+dist/
+_build_deps/
+tmp_build/
+*.spec
+HB-Bots.exe
